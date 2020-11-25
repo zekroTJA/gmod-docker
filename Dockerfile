@@ -12,7 +12,7 @@ RUN mkdir -p "$HOME/content/css" \
 RUN curl -Lo $HOME/gmod_server/source_logger "https://github.com/LukWebsForge/SourceLogger/releases/download/v1.0/source_logger" \
     && chmod +x $HOME/gmod_server/source_logger
 
-COPY garrysmod garrysmod
+COPY garrysmod/cfg/mount.cfg /home/steam/gmod_server/garrysmod/cfg/mount.cfg
 
 ENV WS_COLLECTION_ID="1295264802"
 ENV AUTHKEY=""
