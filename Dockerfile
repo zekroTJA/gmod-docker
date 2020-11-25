@@ -16,6 +16,7 @@ COPY garrysmod/cfg/mount.cfg /home/steam/gmod_server/garrysmod/cfg/mount.cfg
 
 ENV WS_COLLECTION_ID="1295264802"
 ENV AUTHKEY=""
+ENV ACCOUNT_TOKEN=""
 ENV GAMEMODE="terrortown"
 ENV MAX_PLAYERS="16"
 ENV START_MAP="ttt_bb_teenroom_b2"
@@ -30,4 +31,5 @@ CMD ./source_logger \
       +maxplayers $MAX_PLAYERS \
       +gamemode $GAMEMODE \
       +host_workshop_collection $WS_COLLECTION_ID \
-      +authkey $AUTHKEY
+      +authkey $AUTHKEY \
+      +sv_setsteamaccount $ACCOUNT_TOKEN  
