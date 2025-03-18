@@ -18,9 +18,6 @@ USER "${USER}"
 
 WORKDIR /home/steam/gmod_server
 
-VOLUME /home/steam/gmod_server
-VOLUME /home/steam/content
-
 EXPOSE 27015 27016
 
 ENTRYPOINT [ "/bin/entrypoint.sh" ]
