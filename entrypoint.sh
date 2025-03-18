@@ -11,10 +11,7 @@ mkdir -p "$HOME/content/tf2"
 mkdir -p "$HOME/content/css"
 "$STEAMCMDDIR/steamcmd.sh" +force_install_dir "$HOME/content/css" +login anonymous +app_update 232330 validate +quit
 
-curl -Lo "$HOME/gmod_server/source_logger" "https://github.com/LukWebsForge/SourceLogger/releases/download/v1.0/source_logger"
-chmod +x "$HOME/gmod_server/source_logger"
-
-./source_logger \
+/bin/source_logger \
     -game garrysmod \
     +map "$START_MAP" \
     +maxplayers "$MAX_PLAYERS" \
