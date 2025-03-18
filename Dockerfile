@@ -7,7 +7,7 @@ RUN chmod +x /bin/entrypoint.sh
 
 COPY garrysmod/cfg/mount.cfg /home/steam/gmod_server/garrysmod/cfg/mount.cfg
 
-RUN curl -Lo "/bin/source_logger" "https://github.com/LukWebsForge/SourceLogger/releases/download/v1.0/source_logger"
+RUN curl -Lo "/bin/source_logger" "https://github.com/LukWebsForge/SourceLogger/releases/download/v1.1.0/source_logger"
 RUN chmod +x "/bin/source_logger"
 
 ENV WS_COLLECTION_ID="1295264802"
